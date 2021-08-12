@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>地图展示</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+    body,
+    html,
+    #map {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: "微软雅黑";
+        background: url("./bg.png") 0% 0% / 100%;
+    }
+    .info {
+        z-index: 999;
+        width: auto;
+        min-width: 22rem;
+        padding: .75rem 1.25rem;
+        margin-left: 1.25rem;
+        position: fixed;
+        top: 1rem;
+        background-color: #fff;
+        border-radius: .25rem;
+        font-size: 14px;
+        color: #666;
+        box-shadow: 0 2px 6px 0 rgba(27, 142, 236, 0.5);
+    }
+    </style>
+    <!-- <script src="https://api.map.baidu.com/getscript?amp;v=1.0&amp;ak=wVo9N7sxyBeAMPsKfmFlBv9VStz6oiCt"></script> -->
+    <!-- <script src="https://api.map.baidu.com/getscript?type=webgl&amp;v=1.0&amp;ak=B2e4vVz6VVkHoo3FhCbU4MfFln9GesTl&amp;services=&amp;t=20210528194133"></script> -->
+    <!-- <script type="text/javascript" src=""https://api.map.baidu.com/getscript?v=3.0&ak=wVo9N7sxyBeAMPsKfmFlBv9VStz6oiCt"></script>?? -->
+    <script src="https://api.map.baidu.com/getscript?v=3.0&ak=B2e4vVz6VVkHoo3FhCbU4MfFln9GesTl"></script>
+    <!-- <script src="./sx-allgeo.js"></script>
+    <script src="./sx-geo.js"></script> -->
+</head>
+<body>
+    <div class = "info">最新版GL地图命名空间为BMapGL, 可按住鼠标右键控制地图旋转、修改倾斜角度。</div>
+    <div id="map"></div>
+</body>
+
+<script src="https://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
+<script crossorigin="anonymous" integrity="sha512-avZBaO59S3QHZ7OtZ6pWKQHrBLZ1rax/eUQq03uLqQ85tu8ZjEM0Y37RsiF1Me3EWjYUlaHHtnAYBJM/9PUK7w==" src="https://lib.baomitu.com/echarts/5.1.2/echarts.common.js"></script>
+<script src="./CunstomLayer.js"></script>
+<script src="./mapjstest.js"></script>
+<script src="search.js"></script>
+
+</html>
